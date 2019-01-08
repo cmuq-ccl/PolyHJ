@@ -72,9 +72,6 @@ void *join_thread(void* params) {
 
   /*
    * Apply the appropriate CBP Join Model among I, II, III, IV.
-   * Note that it is possible to write a generic function for all models.
-   * However, for simplicity and to avoid more complex models (e.g., IV)
-   * affecting the performance of simpler models (e.g., I), we do not do so.
    */
   if(Radix.R == Radix.S) {
     if(Radix.R == 0) ColBP_I(T);
@@ -82,7 +79,7 @@ void *join_thread(void* params) {
   }
   else {
     if(Radix.S == 0) ColBP_III(T);
-    else             ColBP_IV(T);
+    else             assert(false);
   }
 
 

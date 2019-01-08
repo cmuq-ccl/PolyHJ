@@ -1,7 +1,6 @@
 /*
  * PolyHJ: Polymorphic Hash Join.
  * Collaborative Building and Probing (ColBP) Procedures, Model III.
- * TODO: More info about model.
  * (Refer to note in run.c w.r.t. ColBP models)
  */
 
